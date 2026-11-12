@@ -1,0 +1,10 @@
+{
+  "project": "facefriend-study",
+  "upstream": "https://github.com/kookmin-sw/capstone-2024-18",
+  "baseline_commit": "c84a98ec3d9d16681c5a3fe5591c37cb767c48a7",
+  "local_snapshot_commit": "c84a98ec3d9d16681c5a3fe5591c37cb767c48a7",
+  "published_on": "2026-11-12",
+  "purpose": "팀 프로젝트 종료 후 개인 후속 학습",
+  "ai_assistance": "로컬 변경 일부와 이관·측정 스크립트는 AI의 도움을 받아 작성. 변경과 실행 결과를 검토하며 학습합니다.",
+  "historical_local_commits": []
+}

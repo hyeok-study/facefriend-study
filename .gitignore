@@ -1,0 +1,8 @@
+checkout/
+node_modules/
+.gradle/
+build/
+.env
+.env.*
+!*.example
+.DS_Store
