@@ -1,27 +1,21 @@
-# facefriend-study
+# FaceFriend 학습 기록
 
-기존 프로젝트를 다시 읽고 테스트와 측정으로 동작을 확인하는 개인 학습 저장소입니다.
+직접 구현했던 FaceFriend 프로젝트를 바탕으로 코드를 다시 읽고 학습하는 공간입니다. 구조와 동작을 이해하고, 궁금한 점을 확인하거나 개선을 시도한 과정을 남깁니다.
 
-원본: [kookmin-sw/capstone-2024-18](https://github.com/kookmin-sw/capstone-2024-18)
+원본 프로젝트: [kookmin-sw/capstone-2024-18](https://github.com/kookmin-sw/capstone-2024-18)
 
-기준 커밋: `c84a98ec3d9d16681c5a3fe5591c37cb767c48a7`
+## 학습 기록
 
-팀 프로젝트 종료 후의 학습이며, 원본 프로젝트 당시의 구현·성과와 구분합니다. 로컬 변경을 검토하고 공개하는 날짜는 2026-11-12입니다. AI 활용 범위와 원본 로컬 커밋 정보는 [manifest.json](manifest.json)에 기록합니다.
+- 확인할 문제와 작업 범위는 이슈에 정리합니다.
+- 변경 이유와 구현 내용, 검증 결과는 PR에 기록합니다.
+- 실험 조건과 결과는 해당 작업에서 함께 설명합니다.
 
-원본 소스의 저작자와 권리를 유지합니다. 원본 전체를 재배포하는 대신 기준 커밋에 적용할 패치와 추가 테스트를 관리합니다.
-
-공통 활동 기록: [engineering-study](https://github.com/hyeok-study/engineering-study)
-
-## 재현
+## 시작하기
 
 ```sh
 python3 scripts/prepare.py
 ```
 
-`checkout/`에 원본 기준 커밋을 받고 패치와 추가 파일을 적용합니다. 필요한 런타임과 테스트 명령은 검증 기록에 적습니다. 옛 결과 보고서와 환경 파일은 자동 이관하지 않습니다.
+원본 기준 커밋에 학습 중 작성한 변경을 적용해 `checkout/`을 구성합니다. 기준 커밋은 [manifest.json](manifest.json), 실행 환경과 명령은 [VALIDATION.md](VALIDATION.md)에서 확인할 수 있습니다.
 
-## 확인한 내용
-
-[실행 범위와 결과](VALIDATION.md), [측정 JSON](results), [이관 파일 해시](inventory.json)를 함께 기록합니다.
-
-[이관 및 기준 측정 이슈](https://github.com/hyeok-study/facefriend-study/issues/1)
+[전체 학습 기록](https://github.com/hyeok-study/engineering-study) · [이슈](https://github.com/hyeok-study/facefriend-study/issues) · [PR](https://github.com/hyeok-study/facefriend-study/pulls)
