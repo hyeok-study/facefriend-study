@@ -1,0 +1,10 @@
+[
+  {
+    "path": "overlay/tests/load/k6/stomp-chat.js",
+    "sha256": "d6ccb030a4639b024068594ba3078dcb59311005c95da5299cea2a3246795387"
+  },
+  {
+    "path": "overlay/tests/load/k6/http-chat.js",
+    "sha256": "4efd2aa2e1ac5cdd5024114a410d036b61f5428a66d581186c64278f9e5ae75b"
+  }
+]

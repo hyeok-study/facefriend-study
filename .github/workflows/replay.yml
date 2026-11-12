@@ -1,0 +1,28 @@
+name: Replay and static metrics
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python3 scripts/test_metrics.py
+      - run: python3 scripts/prepare.py
+      - name: Verify production source matches measured revision
+        run: |
+          python3 scripts/metrics.py "checkout/$(python3 -c 'import json;print(json.load(open("manifest.json"))["static_metrics_scope"])')" --output /tmp/static.json
+          python3 - <<'PYTHON'
+          import json,pathlib
+          r=pathlib.Path('results')
+          expected=json.loads((r/('static-current.json' if (r/'static-current.json').exists() else 'static-baseline.json')).read_text())
+          actual=json.load(open('/tmp/static.json'))
+          for key in ['source_sha256','files','internal_edges','cycle_count']:
+              assert actual[key] == expected[key], (key, actual[key], expected[key])
+          PYTHON

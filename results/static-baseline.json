@@ -1,0 +1,866 @@
+{
+  "definition": "Production source files; fan-in/out counts distinct statically resolved internal file imports, not runtime calls. Java wildcard imports, DI wiring, reflection and unresolved TS aliases are not resolved. Cycles cover this graph only. Source lines approximate nonblank noncomment lines, not a quality score.",
+  "source_sha256": "e869e613aa10cb39261436f7177d682d261d750cb62cc097602abad3a997bab8",
+  "files": 150,
+  "approx_source_lines": 5478,
+  "internal_edges": 336,
+  "unresolved_local_imports": 0,
+  "cycle_count": 0,
+  "cycles": [],
+  "top_fan_in": [
+    {
+      "file": "src/main/java/capstone/facefriend/member/domain/member/Member.java",
+      "fan_in": 23,
+      "fan_out": 4
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/common/exception/ExceptionType.java",
+      "fan_in": 17,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/exception/member/MemberException.java",
+      "fan_in": 13,
+      "fan_out": 2
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/exception/member/MemberExceptionType.java",
+      "fan_in": 12,
+      "fan_out": 2
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/repository/MemberRepository.java",
+      "fan_in": 12,
+      "fan_out": 1
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/domain/ChatRoom.java",
+      "fan_in": 11,
+      "fan_out": 1
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/common/exception/BaseException.java",
+      "fan_in": 9,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/auth/controller/support/AuthMember.java",
+      "fan_in": 8,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/common/aop/TimeTrace.java",
+      "fan_in": 8,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/common/exception/Status.java",
+      "fan_in": 8,
+      "fan_out": 0
+    }
+  ],
+  "top_fan_out": [
+    {
+      "file": "src/main/java/capstone/facefriend/member/service/MemberService.java",
+      "fan_in": 2,
+      "fan_out": 20
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/aop/ChatAop.java",
+      "fan_in": 0,
+      "fan_out": 15
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/bucket/BucketService.java",
+      "fan_in": 4,
+      "fan_out": 14
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/service/ChatRoomService.java",
+      "fan_in": 1,
+      "fan_out": 14
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/service/MessageService.java",
+      "fan_in": 1,
+      "fan_out": 13
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/DummyInitializer.java",
+      "fan_in": 0,
+      "fan_out": 12
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/service/AnalysisInfoService.java",
+      "fan_in": 1,
+      "fan_out": 11
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/resume/service/ResumeService.java",
+      "fan_in": 1,
+      "fan_out": 10
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/service/FaceInfoService.java",
+      "fan_in": 2,
+      "fan_out": 9
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/auth/infrastructure/RestTemplateOAuthRequester.java",
+      "fan_in": 0,
+      "fan_out": 8
+    }
+  ],
+  "file_metrics": [
+    {
+      "file": "src/main/java/capstone/facefriend/DummyInitializer.java",
+      "fan_in": 0,
+      "fan_out": 12
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/FacefriendApplication.java",
+      "fan_in": 0,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/auth/config/AuthConfig.java",
+      "fan_in": 0,
+      "fan_out": 1
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/auth/controller/AuthArgumentResolver.java",
+      "fan_in": 1,
+      "fan_out": 2
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/auth/controller/AuthController.java",
+      "fan_in": 0,
+      "fan_out": 6
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/auth/controller/interceptor/HttpMethod.java",
+      "fan_in": 0,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/auth/controller/interceptor/LoginCheckInterceptor.java",
+      "fan_in": 0,
+      "fan_out": 2
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/auth/controller/interceptor/LoginInterceptor.java",
+      "fan_in": 0,
+      "fan_out": 5
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/auth/controller/interceptor/PathContainer.java",
+      "fan_in": 0,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/auth/controller/interceptor/PathMatchInterceptor.java",
+      "fan_in": 0,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/auth/controller/interceptor/PathRequest.java",
+      "fan_in": 0,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/auth/controller/interceptor/TokenBlackListInterceptor.java",
+      "fan_in": 0,
+      "fan_out": 2
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/auth/controller/interceptor/TokenReissueInterceptor.java",
+      "fan_in": 0,
+      "fan_out": 3
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/auth/controller/support/AuthMember.java",
+      "fan_in": 8,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/auth/controller/support/AuthenticationContext.java",
+      "fan_in": 4,
+      "fan_out": 2
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/auth/controller/support/AuthenticationExtractor.java",
+      "fan_in": 5,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/auth/domain/oauth/GoogleMember.java",
+      "fan_in": 0,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/auth/domain/oauth/OAuthMember.java",
+      "fan_in": 4,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/auth/domain/oauth/Provider.java",
+      "fan_in": 4,
+      "fan_out": 2
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/auth/domain/token/AccessToken.java",
+      "fan_in": 3,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/auth/domain/token/RefreshToken.java",
+      "fan_in": 3,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/auth/domain/token/TokenProvider.java",
+      "fan_in": 5,
+      "fan_out": 1
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/auth/dto/LoginUriResponse.java",
+      "fan_in": 1,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/auth/dto/OAuthLoginRequest.java",
+      "fan_in": 3,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/auth/dto/OAuthTokenResponse.java",
+      "fan_in": 1,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/auth/dto/OAuthUriRequest.java",
+      "fan_in": 0,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/auth/dto/TokenResponse.java",
+      "fan_in": 6,
+      "fan_out": 2
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/auth/exception/AuthException.java",
+      "fan_in": 5,
+      "fan_out": 2
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/auth/exception/AuthExceptionType.java",
+      "fan_in": 5,
+      "fan_out": 2
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/auth/infrastructure/JwtProvider.java",
+      "fan_in": 1,
+      "fan_out": 7
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/auth/infrastructure/RestTemplateOAuthRequester.java",
+      "fan_in": 0,
+      "fan_out": 8
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/auth/service/AuthService.java",
+      "fan_in": 1,
+      "fan_out": 8
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/auth/service/OAuthProviderProperties.java",
+      "fan_in": 1,
+      "fan_out": 1
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/auth/service/OAuthRequester.java",
+      "fan_in": 2,
+      "fan_out": 3
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/bucket/BucketConfig.java",
+      "fan_in": 0,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/bucket/BucketException.java",
+      "fan_in": 1,
+      "fan_out": 2
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/bucket/BucketExceptionType.java",
+      "fan_in": 2,
+      "fan_out": 2
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/bucket/BucketService.java",
+      "fan_in": 4,
+      "fan_out": 14
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/aop/ChatAop.java",
+      "fan_in": 0,
+      "fan_out": 15
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/config/ChatConfig.java",
+      "fan_in": 0,
+      "fan_out": 1
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/config/RedisConfig.java",
+      "fan_in": 0,
+      "fan_out": 1
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/controller/ChatRoomController.java",
+      "fan_in": 0,
+      "fan_out": 2
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/controller/MessageController.java",
+      "fan_in": 0,
+      "fan_out": 8
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/controller/interceptor/FilterChannelInterceptor.java",
+      "fan_in": 1,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/domain/ChatMessage.java",
+      "fan_in": 5,
+      "fan_out": 2
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/domain/ChatRoom.java",
+      "fan_in": 11,
+      "fan_out": 1
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/domain/ChatRoomInfo.java",
+      "fan_in": 4,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/domain/ChatRoomMember.java",
+      "fan_in": 4,
+      "fan_out": 3
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/domain/SocketInfo.java",
+      "fan_in": 1,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/exception/ChatException.java",
+      "fan_in": 4,
+      "fan_out": 2
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/exception/ChatExceptionType.java",
+      "fan_in": 2,
+      "fan_out": 2
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/repository/ChatMessageRepository.java",
+      "fan_in": 3,
+      "fan_out": 2
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/repository/ChatRoomInfoRedisRepository.java",
+      "fan_in": 1,
+      "fan_out": 1
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/repository/ChatRoomMemberRepository.java",
+      "fan_in": 3,
+      "fan_out": 3
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/repository/ChatRoomRepository.java",
+      "fan_in": 2,
+      "fan_out": 1
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/repository/SocketInfoRedisRepository.java",
+      "fan_in": 0,
+      "fan_out": 1
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/service/ChatRoomService.java",
+      "fan_in": 1,
+      "fan_out": 14
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/service/MessageService.java",
+      "fan_in": 1,
+      "fan_out": 13
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/service/RedisSubscriber.java",
+      "fan_in": 1,
+      "fan_out": 4
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/service/dto/chatroom/ChatRoomCloseResponse.java",
+      "fan_in": 0,
+      "fan_out": 2
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/service/dto/chatroom/ChatRoomEmptyResponse.java",
+      "fan_in": 0,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/service/dto/chatroom/ChatRoomEnterResponse.java",
+      "fan_in": 0,
+      "fan_out": 1
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/service/dto/chatroom/ChatRoomExitResponse.java",
+      "fan_in": 0,
+      "fan_out": 1
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/service/dto/chatroom/ChatRoomHeartResponse.java",
+      "fan_in": 0,
+      "fan_out": 2
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/service/dto/chatroom/ChatRoomLeftResponse.java",
+      "fan_in": 0,
+      "fan_out": 1
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/service/dto/chatroom/ChatRoomMessageResponse.java",
+      "fan_in": 0,
+      "fan_out": 3
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/service/dto/chatroom/ChatRoomOpenResponse.java",
+      "fan_in": 0,
+      "fan_out": 2
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/service/dto/heart/GetSendHeartResponse.java",
+      "fan_in": 1,
+      "fan_out": 1
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/service/dto/heart/HeartReplyRequest.java",
+      "fan_in": 2,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/service/dto/heart/HeartReplyResponse.java",
+      "fan_in": 1,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/service/dto/heart/SendHeartRequest.java",
+      "fan_in": 1,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/service/dto/heart/SendHeartResponse.java",
+      "fan_in": 2,
+      "fan_out": 1
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/service/dto/message/GetMessageResponse.java",
+      "fan_in": 1,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/service/dto/message/MessageListRequest.java",
+      "fan_in": 2,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/service/dto/message/MessageListResponse.java",
+      "fan_in": 2,
+      "fan_out": 1
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/service/dto/message/MessageRequest.java",
+      "fan_in": 2,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/chat/service/dto/message/MessageResponse.java",
+      "fan_in": 2,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/common/aop/TimeTrace.java",
+      "fan_in": 8,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/common/aop/TimeTraceAspect.java",
+      "fan_in": 0,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/common/domain/BaseEntity.java",
+      "fan_in": 4,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/common/exception/BaseException.java",
+      "fan_in": 9,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/common/exception/ExceptionResponse.java",
+      "fan_in": 1,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/common/exception/ExceptionStatus.java",
+      "fan_in": 1,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/common/exception/ExceptionType.java",
+      "fan_in": 17,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/common/exception/Status.java",
+      "fan_in": 8,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/config/JpaQueryConfig.java",
+      "fan_in": 0,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/config/RestTemplateConfig.java",
+      "fan_in": 0,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/config/WebConfig.java",
+      "fan_in": 0,
+      "fan_out": 1
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/email/config/EmailConfig.java",
+      "fan_in": 0,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/email/controller/dto/EmailVerificationResponse.java",
+      "fan_in": 2,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/email/exception/EmailException.java",
+      "fan_in": 1,
+      "fan_out": 2
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/email/exception/EmailExceptionType.java",
+      "fan_in": 1,
+      "fan_out": 2
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/email/service/EmailService.java",
+      "fan_in": 1,
+      "fan_out": 3
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/exception/GlobalExceptionHandler.java",
+      "fan_in": 0,
+      "fan_out": 4
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/controller/AnalysisInfoController.java",
+      "fan_in": 0,
+      "fan_out": 8
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/controller/BasicInfoController.java",
+      "fan_in": 0,
+      "fan_out": 4
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/controller/FaceInfoController.java",
+      "fan_in": 0,
+      "fan_out": 7
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/controller/MemberController.java",
+      "fan_in": 0,
+      "fan_out": 7
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/domain/analysisInfo/AnalysisInfo.java",
+      "fan_in": 6,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/domain/basicInfo/BasicInfo.java",
+      "fan_in": 8,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/domain/faceInfo/FaceInfo.java",
+      "fan_in": 7,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/domain/faceInfo/FaceInfoByLevel.java",
+      "fan_in": 4,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/domain/member/Member.java",
+      "fan_in": 23,
+      "fan_out": 4
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/domain/member/Role.java",
+      "fan_in": 2,
+      "fan_out": 2
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/dto/analysisInfo/AnalysisInfoFullResponse.java",
+      "fan_in": 2,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/dto/analysisInfo/AnalysisInfoFullShortResponse.java",
+      "fan_in": 2,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/dto/analysisInfo/AnalysisInfoShortResponse.java",
+      "fan_in": 2,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/dto/basicInfo/BasicInfoRequest.java",
+      "fan_in": 2,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/dto/basicInfo/BasicInfoResponse.java",
+      "fan_in": 2,
+      "fan_out": 1
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/dto/faceInfo/FaceInfoResponse.java",
+      "fan_in": 2,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/dto/member/FindEmailResponse.java",
+      "fan_in": 1,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/dto/member/ReissueRequest.java",
+      "fan_in": 0,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/dto/member/ResetPasswordRequest.java",
+      "fan_in": 0,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/dto/member/SignInRequest.java",
+      "fan_in": 1,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/dto/member/SignUpRequest.java",
+      "fan_in": 1,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/dto/member/SignupResponse.java",
+      "fan_in": 1,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/exception/analysis/AnalysisInfoException.java",
+      "fan_in": 4,
+      "fan_out": 2
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/exception/analysis/AnalysisInfoExceptionType.java",
+      "fan_in": 3,
+      "fan_out": 2
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/exception/faceInfo/FaceInfoException.java",
+      "fan_in": 2,
+      "fan_out": 2
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/exception/faceInfo/FaceInfoExceptionType.java",
+      "fan_in": 2,
+      "fan_out": 2
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/exception/member/MemberException.java",
+      "fan_in": 13,
+      "fan_out": 2
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/exception/member/MemberExceptionType.java",
+      "fan_in": 12,
+      "fan_out": 2
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/multipartFile/ByteArrayMultipartFile.java",
+      "fan_in": 3,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/repository/AnalysisInfoRepository.java",
+      "fan_in": 2,
+      "fan_out": 2
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/repository/BasicInfoRepository.java",
+      "fan_in": 2,
+      "fan_out": 1
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/repository/FaceInfoByLevelRepository.java",
+      "fan_in": 1,
+      "fan_out": 1
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/repository/FaceInfoRepository.java",
+      "fan_in": 3,
+      "fan_out": 2
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/repository/MemberRepository.java",
+      "fan_in": 12,
+      "fan_out": 1
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/service/AnalysisInfoRequestor.java",
+      "fan_in": 1,
+      "fan_out": 2
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/service/AnalysisInfoService.java",
+      "fan_in": 1,
+      "fan_out": 11
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/service/BasicInfoService.java",
+      "fan_in": 1,
+      "fan_out": 7
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/service/FaceInfoRequestor.java",
+      "fan_in": 2,
+      "fan_out": 4
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/service/FaceInfoService.java",
+      "fan_in": 2,
+      "fan_out": 9
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/service/MemberService.java",
+      "fan_in": 2,
+      "fan_out": 20
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/member/service/deserializer/StringListDeserializer.java",
+      "fan_in": 1,
+      "fan_out": 2
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/redis/RedisDao.java",
+      "fan_in": 4,
+      "fan_out": 2
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/resume/controller/ResumeController.java",
+      "fan_in": 0,
+      "fan_out": 2
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/resume/domain/Resume.java",
+      "fan_in": 7,
+      "fan_out": 1
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/resume/dto/ResumeDeleteResponse.java",
+      "fan_in": 0,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/resume/dto/ResumeGetResponse.java",
+      "fan_in": 0,
+      "fan_out": 4
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/resume/dto/ResumeHomeDetailResponse.java",
+      "fan_in": 2,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/resume/dto/ResumePostPutRequest.java",
+      "fan_in": 0,
+      "fan_out": 0
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/resume/dto/ResumePostPutResponse.java",
+      "fan_in": 0,
+      "fan_out": 4
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/resume/exception/ResumeException.java",
+      "fan_in": 1,
+      "fan_out": 2
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/resume/exception/ResumeExceptionType.java",
+      "fan_in": 0,
+      "fan_out": 2
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/resume/repository/ResumeRepository.java",
+      "fan_in": 2,
+      "fan_out": 2
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/resume/repository/ResumeRepositoryCustom.java",
+      "fan_in": 0,
+      "fan_out": 1
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/resume/repository/ResumeRepositoryImpl.java",
+      "fan_in": 0,
+      "fan_out": 7
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/resume/service/ResumeService.java",
+      "fan_in": 1,
+      "fan_out": 10
+    },
+    {
+      "file": "src/main/java/capstone/facefriend/web/CorsFilter.java",
+      "fan_in": 1,
+      "fan_out": 0
+    }
+  ]
+}

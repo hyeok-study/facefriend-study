@@ -11,3 +11,17 @@
 원본 소스의 저작자와 권리를 유지합니다. 원본 전체를 재배포하는 대신 기준 커밋에 적용할 패치와 추가 테스트를 관리합니다.
 
 공통 활동 기록: [engineering-study](https://github.com/hyeok-study/engineering-study)
+
+## 재현
+
+```sh
+python3 scripts/prepare.py
+```
+
+`checkout/`에 원본 기준 커밋을 받고 패치와 추가 파일을 적용합니다. 필요한 런타임과 테스트 명령은 검증 기록에 적습니다. 옛 결과 보고서와 환경 파일은 자동 이관하지 않습니다.
+
+## 확인한 내용
+
+[실행 범위와 결과](VALIDATION.md), [측정 JSON](results), [이관 파일 해시](inventory.json)를 함께 기록합니다.
+
+[이관 및 기준 측정 이슈](https://github.com/hyeok-study/facefriend-study/issues/1)
